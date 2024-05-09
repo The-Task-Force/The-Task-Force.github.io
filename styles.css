@@ -1,3 +1,6 @@
+/* Ensure Font Awesome icons are displaying properly */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
 /* Reset and global styles */
 * {
   box-sizing: border-box;
@@ -123,7 +126,7 @@ main {
   background-color: #2b2b2b;
   padding: 2rem;
   border-radius: 10px;
-  max-width: 1200px;
+  max-width: 950px;
   width: 95%;
   margin: 0 auto;
 }
@@ -134,6 +137,124 @@ main {
 }
 
 .hero p {
+  font-size: 1.2rem;
+}
+
+/* Security Insights Section */
+.security-insights {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.security-insights h2 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.insight-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.insight-box {
+  background-color: #2b2b2b;
+  padding: 1.5rem;
+  border-radius: 5px;
+  width: calc(33.333% - 20px);
+  text-align: center;
+  transition: background-color 0.3s ease;
+  flex-grow: 1;
+  max-width: 300px;
+  margin-right: 20px;
+}
+
+.insight-box:last-child {
+  margin-right: 0;
+}
+
+.insight-box:hover {
+  background-color: #3b3b3b;
+}
+
+.insight-box .icon {
+  margin-bottom: 1rem;
+}
+
+.insight-box .icon i {
+  font-size: 2rem;
+  color: #f5a623;
+}
+
+.insight-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.insight-box p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Contact Us Section */
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.contact-box {
+  background-color: #2b2b2b;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 950px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.contact-us h2 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.contact-us p {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-button {
+  background-color: #f5a623;
+  color: #333;
+  padding: 0.8rem 2.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  transition: background-color 0.3s ease;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+
+.contact-button:hover {
+  background-color: #e59300;
+}
+
+.contact-button i {
+  margin-right: 0.5rem;
   font-size: 1.2rem;
 }
 
@@ -201,6 +322,8 @@ main {
 /* Featured Blog Posts */
 .featured-posts {
   padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .featured-posts h2 {
@@ -211,8 +334,10 @@ main {
 
 .post-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 2rem;
+  max-width: 940px;
+  margin: 0 auto;
 }
 
 .blog h1 {
@@ -228,6 +353,7 @@ main {
   cursor: pointer;
   transition: background-color 0.3s ease;
   animation: slideUp 0.5s ease;
+  max-width: 300px;
 }
 
 .blog-post:hover {
@@ -259,6 +385,8 @@ main {
 /* Featured Projects */
 .featured-projects {
   padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .featured-projects h2 {
@@ -269,8 +397,10 @@ main {
 
 .project-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 2rem;
+  max-width: 940px;
+  margin: 0 auto;
 }
 
 .project-preview {
@@ -280,6 +410,7 @@ main {
   cursor: pointer;
   transition: background-color 0.3s ease;
   animation: slideUp 0.5s ease;
+  max-width: 300px;
 }
 
 .project-preview:hover {
@@ -327,6 +458,25 @@ my-footer {
   }
   100% {
     opacity: 1;
+  }
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+  .insight-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .post-container,
+  .project-container {
+    grid-template-columns: 1fr;
+  }
+
+  .insight-box {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
   }
 }
 
