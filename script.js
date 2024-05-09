@@ -94,6 +94,8 @@ async function readProjectDetails() {
     })
   );
 
+  allProjects.sort((a, b) => b.date - a.date); // Sort projects by date in descending order
+
   return allProjects;
 }
 
