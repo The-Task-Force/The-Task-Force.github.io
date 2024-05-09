@@ -44,55 +44,55 @@ nav a:hover {
 }
 
 .breadcrumb {
- list-style: none;
- display: flex;
- max-width: 1200px;
- margin: 20px auto 0;
- padding: 0 1rem 20px;
- font-size: 0.9rem;
- color: #aaa;
+  list-style: none;
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto 0;
+  padding: 0 1rem 20px;
+  font-size: 0.9rem;
+  color: #aaa;
 }
 
 .breadcrumb-item {
- margin-right: 1rem;
+  margin-right: 1rem;
 }
 
 .breadcrumb-item:not(:last-child)::after {
- content: ">";
- color: #777;
+  content: ">";
+  color: #777;
 }
 
 .breadcrumb-item a {
- color: #aaa;
- text-decoration: none;
- transition: color 0.3s ease;
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .breadcrumb-item a:hover {
- color: #ccc;
+  color: #ccc;
 }
 
 .breadcrumb-item.active {
- color: #fff;
- font-weight: 600;
+  color: #fff;
+  font-weight: 600;
 }
 
 ::-webkit-scrollbar {
- width: 12px;
- height: 12px;
+  width: 12px;
+  height: 12px;
 }
 
 ::-webkit-scrollbar-track {
- background-color: #121212;
+  background-color: #121212;
 }
 
 ::-webkit-scrollbar-thumb {
- background-color: #555;
- border-radius: 6px;
+  background-color: #555;
+  border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
- background-color: #666;
+  background-color: #666;
 }
 
 /* Main Content */
