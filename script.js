@@ -154,4 +154,25 @@ class Footer extends HTMLElement {
   }
 }
 
+class Header extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.tag;
+    this.innerHTML = `
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="projects.html">Projects</a>
+      <a href="blog.html">Blog</a>
+      <a href="#">Support us</a>
+      <a href="https://github.com/The-Task-Force">GitHub</a>
+    </nav>
+  `;
+  }
+}
+
 customElements.define("my-footer", Footer);
+customElements.define("my-header", Header);
