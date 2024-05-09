@@ -28,6 +28,7 @@ body {
 my-header {
   background-color: #2b2b2b;
   padding: 1rem;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 nav {
@@ -129,6 +130,7 @@ main {
   max-width: 950px;
   width: 95%;
   margin: 0 auto;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 .hero h1 {
@@ -170,6 +172,7 @@ main {
   flex-grow: 1;
   max-width: 300px;
   margin-right: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 .insight-box:last-child {
@@ -216,6 +219,7 @@ main {
   max-width: 950px;
   width: 95%;
   margin: 0 auto;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 .contact-us h2 {
@@ -247,6 +251,7 @@ main {
   font-size: 1.1rem;
   display: flex;
   align-items: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 .contact-button:hover {
@@ -317,6 +322,8 @@ main {
   background-color: #f5a623;
   margin: 0 auto 20px;
   width: 50px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 /* Featured Blog Posts */
@@ -354,6 +361,7 @@ main {
   transition: background-color 0.3s ease;
   animation: slideUp 0.5s ease;
   max-width: 300px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 .blog-post:hover {
@@ -411,6 +419,7 @@ main {
   transition: background-color 0.3s ease;
   animation: slideUp 0.5s ease;
   max-width: 300px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 .project-preview:hover {
@@ -449,6 +458,7 @@ my-footer {
   padding: 1rem;
   text-align: center;
   margin-top: auto;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 /* Animations */
