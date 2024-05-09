@@ -119,6 +119,15 @@ main {
   animation: fadeIn 1s ease;
 }
 
+.hero-content {
+  background-color: #2b2b2b;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+}
+
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -180,6 +189,15 @@ main {
   margin-bottom: 0.5rem;
 }
 
+/* Styled section divider */
+.section-divider {
+  border: none;
+  height: 4px;
+  background-color: #f5a623;
+  margin: 0 auto 20px;
+  width: 50px;
+}
+
 /* Featured Blog Posts */
 .featured-posts {
   padding: 2rem;
@@ -187,7 +205,7 @@ main {
 
 .featured-posts h2 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 5px;
   text-align: center;
 }
 
@@ -245,7 +263,7 @@ main {
 
 .featured-projects h2 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 5px;
   text-align: center;
 }
 
