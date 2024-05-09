@@ -1,44 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - The Task Force</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - The Task Force</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="#">Support us</a>
+        <a href="https://github.com/The-Task-Force">GitHub</a>
+      </nav>
+    </header>
 
-<body>
-  <!-- Header -->
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="projects.html">Projects</a>
-      <a href="blog.html">Blog</a>
-      <a href="#">Support us</a>
-      <a href="https://github.com/The-Task-Force">GitHub</a>
-    </nav>
-  </header>
+    <!-- About Section -->
+    <section class="about">
+      <h1>About Us</h1>
+      <div class="about-content">
+        <p>
+          The Task Force is a team of highly skilled professionals dedicated to
+          solving complex problems and achieving exceptional results. Our team
+          is comprised of experts from various fields, including technology,
+          finance, and project management. (ChatGPT wrote this description, must
+          replace later)
+        </p>
+        <!-- Add more content about the team -->
+      </div>
+    </section>
 
-  <!-- About Section -->
-  <section class="about">
-    <h1>About Us</h1>
-    <div class="about-content">
-      <p>The Task Force is a team of highly skilled professionals dedicated to solving complex problems and achieving exceptional results. Our team is comprised of experts from various fields, including technology, finance, and project management. (ChatGPT wrote this description, must replace later)</p>
-      <!-- Add more content about the team -->
-    </div>
-  </section>
+    <!-- Footer -->
+    <footer>
+      <p>
+        &copy; <span id="currentYear"></span> The Task Force. WORK IN PROGRESS
+        SITE NOT FINISHED YET
+      </p>
+    </footer>
+  </body>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; <span id="currentYear"></span> The Task Force. WORK IN PROGRESS SITE NOT FINISHED YET</p>
-  </footer>
-
-</body>
-
-<script>
-  document.getElementById("currentYear").innerHTML = new Date().getFullYear();
-</script>
-
+  <script>
+    document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+  </script>
 </html>

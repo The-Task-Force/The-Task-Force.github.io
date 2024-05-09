@@ -1,0 +1,54 @@
+name: Prettier
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  prettier:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Cache Node.js modules
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if npx prettier --check .; then
+            echo "No changes"
+            echo "::set-output name=result::No changes"
+          else
+            echo "Changes detected"
+            echo "::set-output name=result::Changes detected"
+          fi
+
+      - name: Format code
+        if: steps.check_changes.outputs.result == 'Changes detected'
+        run: npx prettier --write . || echo "Prettier encountered errors."
+
+      - name: Commit and push changes
+        if: steps.check_changes.outputs.result == 'Changes detected'
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add .
+          git commit -m "${{ github.event.head_commit.message }} (Formatted code with Prettier)"
+          git push

@@ -1,5 +1,6 @@
 #featured
 date: 2024-05-08
+
 # Featured Project 2
 
 This is the first line of the featured blog post content, which will be used as the excerpt.

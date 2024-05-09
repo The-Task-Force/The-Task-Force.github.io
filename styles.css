@@ -5,7 +5,8 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
 }
@@ -49,7 +50,7 @@ main {
 
 /* Hero Section */
 .hero {
-  background-image: url('hero-image.jpg');
+  background-image: url("hero-image.jpg");
   background-size: cover;
   background-position: center;
   height: 500px;

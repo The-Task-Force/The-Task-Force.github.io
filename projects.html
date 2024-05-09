@@ -1,45 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accomplishments - The Task Force</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Accomplishments - The Task Force</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
-</head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="#">Support us</a>
+        <a href="https://github.com/The-Task-Force">GitHub</a>
+      </nav>
+    </header>
 
-<body>
+    <!-- Accomplishments Section -->
+    <section class="accomplishments">
+      <h1>Our Accomplishments</h1>
+      <div class="project-container">
+        <!-- Project here -->
+      </div>
+    </section>
 
-  <!-- Header -->
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="projects.html">Projects</a>
-      <a href="blog.html">Blog</a>
-      <a href="#">Support us</a>
-      <a href="https://github.com/The-Task-Force">GitHub</a>
-    </nav>
-  </header>
+    <!-- Footer -->
+    <footer>
+      <p>
+        &copy; <span id="currentYear"></span> The Task Force. WORK IN PROGRESS
+        SITE NOT FINISHED YET
+      </p>
+    </footer>
+  </body>
 
-  <!-- Accomplishments Section -->
-  <section class="accomplishments">
-    <h1>Our Accomplishments</h1>
-    <div class="project-container">
-      <!-- Project here -->
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; <span id="currentYear"></span> The Task Force. WORK IN PROGRESS SITE NOT FINISHED YET</p>
-  </footer>
-
-</body>
-
-<script>
-  document.getElementById("currentYear").innerHTML = new Date().getFullYear();
-</script>
-
+  <script>
+    document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+  </script>
 </html>

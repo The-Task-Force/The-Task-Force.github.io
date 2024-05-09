@@ -1,4 +1,5 @@
 date: 2024-05-05
+
 # Featured Post Title
 
 This is the first line of the featured blog post content, which will be used as the excerpt.
