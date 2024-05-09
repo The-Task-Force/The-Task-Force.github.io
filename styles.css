@@ -48,6 +48,11 @@ main {
   flex: 1;
 }
 
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
 /* Hero Section */
 .hero {
   background-image: url("hero-image.jpg");
@@ -263,7 +268,7 @@ main {
   margin-bottom: 1rem;
 }
 /* Footer */
-footer {
+my-footer {
   background-color: #2b2b2b;
   padding: 1rem;
   text-align: center;

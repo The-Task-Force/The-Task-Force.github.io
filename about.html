@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us - The Task Force</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
 
   <body>
@@ -23,7 +24,7 @@
     <!-- About Section -->
     <section class="about">
       <h1>About Us</h1>
-      <div class="about-content">
+      <div class="about-content container">
         <p>
           The Task Force is a team of highly skilled professionals dedicated to
           solving complex problems and achieving exceptional results. Our team
@@ -36,15 +37,6 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-      <p>
-        &copy; <span id="currentYear"></span> The Task Force. WORK IN PROGRESS
-        SITE NOT FINISHED YET
-      </p>
-    </footer>
+    <my-footer></my-footer>
   </body>
-
-  <script>
-    document.getElementById("currentYear").innerHTML = new Date().getFullYear();
-  </script>
 </html>

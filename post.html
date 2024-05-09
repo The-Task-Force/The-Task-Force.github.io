@@ -24,16 +24,11 @@
 
     <!-- Blog Post Content -->
     <section class="blog-post-content">
-      <div id="post-content"></div>
+      <div class="container" id="post-content"></div>
     </section>
 
     <!-- Footer -->
-    <footer>
-      <p>
-        &copy; <span id="currentYear"></span> The Task Force. WORK IN PROGRESS
-        SITE NOT FINISHED YET
-      </p>
-    </footer>
+    <my-footer></my-footer>
 
     <script>
       // Function to load and display the blog post content
@@ -57,11 +52,6 @@
 
       // Call the loadBlogPost function when the page loads
       window.addEventListener("load", loadBlogPost);
-    </script>
-
-    <script>
-      document.getElementById("currentYear").innerHTML =
-        new Date().getFullYear();
     </script>
   </body>
 </html>

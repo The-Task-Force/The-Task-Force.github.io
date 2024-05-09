@@ -140,3 +140,18 @@ readProjectDetails()
     );
   })
   .catch((error) => console.error("Error:", error));
+
+// Custom elements
+
+class Footer extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.tag;
+    this.innerHTML = `<p>&copy; ${new Date().getFullYear()} The Task Force. WORK IN PROGRESSSITE NOT FINISHED YET</p>`;
+  }
+}
+
+customElements.define("my-footer", Footer);
