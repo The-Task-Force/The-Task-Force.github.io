@@ -1,7 +1,9 @@
 // Get references to the necessary elements
 const postContainer = document.querySelector(".post-container");
 const blogPosts = document.querySelector(".blog-posts");
-const featuredProjectsContainer = document.querySelector(".featured-projects .project-container");
+const featuredProjectsContainer = document.querySelector(
+  ".featured-projects .project-container",
+);
 
 // Function to read blog posts from the blogs folder
 async function readBlogPosts() {
@@ -16,7 +18,7 @@ async function readBlogPosts() {
   await Promise.all(
     blogFiles.map(async (file) => {
       const content = await fetch(blogFolder + file).then((response) =>
-        response.text()
+        response.text(),
       );
       const lines = content.split("\n");
       const isFeatured = lines[0].trim() === "#featured";
@@ -28,13 +30,13 @@ async function readBlogPosts() {
       const excerpt = lines
         .slice(
           lines.findIndex((line) => line.startsWith("# ")) + 1,
-          lines.findIndex((line) => line.startsWith("# ")) + 4
+          lines.findIndex((line) => line.startsWith("# ")) + 4,
         )
         .join("\n");
 
       const post = { title, excerpt, date, isFeatured, file };
       allPosts.push(post);
-    })
+    }),
   );
 
   allPosts.sort((a, b) => b.date - a.date); // Sort posts by date in descending order
@@ -73,7 +75,7 @@ async function readProjectDetails() {
   await Promise.all(
     projectFiles.map(async (file) => {
       const content = await fetch(projectFolder + file).then((response) =>
-        response.text()
+        response.text(),
       );
       const lines = content.split("\n");
       const isFeatured = lines[0].trim() === "#featured";
@@ -85,13 +87,13 @@ async function readProjectDetails() {
       const excerpt = lines
         .slice(
           lines.findIndex((line) => line.startsWith("# ")) + 1,
-          lines.findIndex((line) => line.startsWith("# ")) + 4
+          lines.findIndex((line) => line.startsWith("# ")) + 4,
         )
         .join("\n");
 
       const project = { title, excerpt, date, file, isFeatured };
       allProjects.push(project);
-    })
+    }),
   );
 
   allProjects.sort((a, b) => b.date - a.date); // Sort projects by date in descending order
@@ -133,21 +135,27 @@ readBlogPosts()
 
 readProjectDetails()
   .then((allProjects) => {
-    const featuredProjects = allProjects.filter((project) => project.isFeatured);
-    const regularProjects = allProjects.filter((project) => !project.isFeatured);
+    const featuredProjects = allProjects.filter(
+      (project) => project.isFeatured,
+    );
+    const regularProjects = allProjects.filter(
+      (project) => !project.isFeatured,
+    );
 
     // Populate featured projects
     featuredProjects.forEach((project) =>
-      createProjectPreview(project, featuredProjectsContainer)
+      createProjectPreview(project, featuredProjectsContainer),
     );
 
     // Populate all project previews
     regularProjects.forEach((project) =>
-      createProjectPreview(project, projectContainer)
+      createProjectPreview(project, projectContainer),
     );
 
     // Add animation to post previews and project previews
-    const postPreviews = document.querySelectorAll(".blog-post, .project-preview");
+    const postPreviews = document.querySelectorAll(
+      ".blog-post, .project-preview",
+    );
     postPreviews.forEach((preview, index) => {
       preview.style.animationDelay = `${index * 0.1}s`;
     });
