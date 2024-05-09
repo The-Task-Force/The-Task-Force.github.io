@@ -171,7 +171,7 @@ class Footer extends HTMLElement {
 
   connectedCallback() {
     this.tag;
-    this.innerHTML = `<p>&copy; ${new Date().getFullYear()} The Task Force. WORK IN PROGRESSSITE NOT FINISHED YET</p>`;
+    this.innerHTML = `<p>&copy; ${new Date().getFullYear()} The Task Force. WORK IN PROGRESS SITE NOT FINISHED YET</p>`;
   }
 }
 
