@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - The Task Force</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="projects.html">Projects</a>
+      <a href="blog.html">Blog</a>
+      <a href="#">Support us</a>
+      <a href="https://github.com/The-Task-Force">GitHub</a>
+    </nav>
+  </header>
+
+  <!-- Blog Section -->
+  <section class="blog">
+    <h1>Our Blog</h1>
+    <div class="blog-posts">
+      <!-- Blog post previews will be rendered here -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="currentYear"></span> The Task Force. WORK IN PROGRESS SITE NOT FINISHED YET</p>
+  </footer>
+
+</body>
+
+<script>
+  document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+</script>
+
+</html>
