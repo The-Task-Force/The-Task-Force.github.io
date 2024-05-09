@@ -43,6 +43,58 @@ nav a:hover {
   color: #f5a623;
 }
 
+.breadcrumb {
+ list-style: none;
+ display: flex;
+ max-width: 1200px;
+ margin: 20px auto 0;
+ padding: 0 1rem 20px;
+ font-size: 0.9rem;
+ color: #aaa;
+}
+
+.breadcrumb-item {
+ margin-right: 1rem;
+}
+
+.breadcrumb-item:not(:last-child)::after {
+ content: ">";
+ color: #777;
+}
+
+.breadcrumb-item a {
+ color: #aaa;
+ text-decoration: none;
+ transition: color 0.3s ease;
+}
+
+.breadcrumb-item a:hover {
+ color: #ccc;
+}
+
+.breadcrumb-item.active {
+ color: #fff;
+ font-weight: 600;
+}
+
+::-webkit-scrollbar {
+ width: 12px;
+ height: 12px;
+}
+
+::-webkit-scrollbar-track {
+ background-color: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+ background-color: #555;
+ border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+ background-color: #666;
+}
+
 /* Main Content */
 main {
   flex: 1;
@@ -141,6 +193,12 @@ main {
 .about h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin: 1rem;
   text-align: center;
 }
 
