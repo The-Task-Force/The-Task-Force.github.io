@@ -15,7 +15,7 @@ body {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #121212;
   color: #e8e8e8;
   line-height: 1.6;
@@ -37,8 +37,10 @@ nav {
 }
 
 nav a {
-font-weight: 500;
-  transition: color 0.3s, transform 0.3s;
+  font-weight: 500;
+  transition:
+    color 0.3s,
+    transform 0.3s;
   color: #fff;
   text-decoration: none;
   margin: 0 1rem;
@@ -252,7 +254,9 @@ main {
   border-radius: 30px;
   text-decoration: none;
   margin: 0 0.5rem;
-  transition: background-color 0.3s, transform 0.3s;
+  transition:
+    background-color 0.3s,
+    transform 0.3s;
   font-size: 1.1rem;
   font-weight: 500;
   display: flex;
